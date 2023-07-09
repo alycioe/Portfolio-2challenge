@@ -85,3 +85,10 @@ a:hover {
 a:hover::before {
     content: "🌸";
 }
+
+.container2 {
+    display: flex;
+    border: dotted rgb(245, 220, 239);
+    border-width: 5px;
+    margin: 20px 10px;
+}
