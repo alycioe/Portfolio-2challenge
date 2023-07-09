@@ -1,0 +1,87 @@
+:root {
+    /* Will fill out when needed */
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-image: linear-gradient(to bottom right, #fbf3f0, #ff9fab);
+}
+
+header {
+    background-color:#ff9fab;
+}
+
+h1 {
+    color:#c42f7a;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:inline-flex;
+    margin: 85px 0;
+}
+
+.background-img {
+    background-image: url("../images/cherry-blossom-bg.jpg");
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.container1 {
+    display:block;
+    position: relative;
+    height: 200px;
+    border: dotted rgb(245, 220, 239);
+    border-width: 0px 0px 10px 0px;
+}
+
+nav {
+    float:right;
+    margin: 110px 0;
+}
+
+nav ul li {
+    display: inline-flex;
+    font-size: 20px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration:none;
+    color:#c42f7a;
+}
+
+.link1 {
+    background-color: rgb(247,201,211, .7);
+    border-radius: 30%;
+}
+
+.link2 {
+    background-color: rgb(229,148,165, .7);
+    border-radius: 30%;
+}
+
+.link3 {
+    background-color: rgb(122,1,8, .7);
+    border-radius: 30%;
+}
+
+.link4 {
+    background-color: rgb(255,243,245, .7);
+    border-radius: 30%;
+}
+
+a:link {
+    color:#c42f7a;
+}
+
+a:hover {
+    color:#ff297e;
+    transition: all .5s;
+    box-shadow: 0px 0px 5px 5px #ff297e;
+}
+
+a:hover::before {
+    content: "🌸";
+}
