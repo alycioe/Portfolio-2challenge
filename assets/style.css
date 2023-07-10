@@ -5,6 +5,8 @@
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     background-image: linear-gradient(to bottom right, #fbf3f0, #ff9fab);
+    background-color: #ff9fab;
+    background-attachment: fixed;
 }
 
 header {
@@ -12,11 +14,19 @@ header {
 }
 
 h1 {
+    display:inline-block;
     color:#c42f7a;
     font-size: 50px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display:inline-flex;
     margin: 85px 0;
+}
+
+h2 {
+    color: #c42f7a;
+    font-size: 25px;
+    border: dotted rgb(245, 220, 239);
+    padding: 2px;
+    background-image: linear-gradient(to bottom right, #fbf3f0, #ff9fab); 
 }
 
 .background-img {
@@ -41,6 +51,8 @@ nav {
 
 nav ul li {
     display: inline-flex;
+    position: flex;
+    flex-wrap: wrap;
     font-size: 20px;
     padding: 10px;
     flex-direction: row;
@@ -50,6 +62,7 @@ nav ul li {
 a {
     text-decoration:none;
     color:#c42f7a;
+    width: 100%;
 }
 
 .link1 {
@@ -57,9 +70,29 @@ a {
     border-radius: 30%;
 }
 
+.link1:hover {
+    color:#ff297e;
+    transition: all .5s;
+    box-shadow: 0px 0px 5px 5px #ff297e;
+}
+
+.link1:hover::before {
+    content: "🌸";
+}
+
 .link2 {
     background-color: rgb(229,148,165, .7);
     border-radius: 30%;
+}
+
+.link2:hover {
+    color:#ff297e;
+    transition: all .5s;
+    box-shadow: 0px 0px 5px 5px #ff297e;
+}
+
+.link2:hover::before {
+    content: "🌸";
 }
 
 .link3 {
@@ -67,21 +100,158 @@ a {
     border-radius: 30%;
 }
 
+.link3:hover {
+    color:#ff297e;
+    transition: all .5s;
+    box-shadow: 0px 0px 5px 5px #ff297e;
+}
+
+.link3:hover::before {
+    content: "🌸";
+}
+
 .link4 {
     background-color: rgb(255,243,245, .7);
     border-radius: 30%;
+}
+
+.link4:hover {
+    color:#ff297e;
+    transition: all .5s;
+    box-shadow: 0px 0px 5px 5px #ff297e;
+}
+
+.link4:hover::before {
+    content: "🌸";
 }
 
 a:link {
     color:#c42f7a;
 }
 
-a:hover {
-    color:#ff297e;
-    transition: all .5s;
-    box-shadow: 0px 0px 5px 5px #ff297e;
+.container2 {
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: dotted #ff9fab;
+    border-width: 5px;
+    margin: 50px 10px 10px 200px;
 }
 
-a:hover::before {
-    content: "🌸";
+.about h2 {
+    display:flex;
+    position:absolute;
+    padding: 30px;
+    margin: 0 10px;
+}
+
+.container3 {
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: dotted #ff9fab;
+    border-width: 5px;
+    margin: 50px 10px 10px 200px;
+}
+
+.projects h2 {
+    display:flex;
+    position:absolute;
+    padding: 30px 40px;
+    margin: 0 10px;
+}
+
+.project1, .project2, .project3, .project4 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.project1 img {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width: 1000px;
+    height: 500px;
+}
+
+.project2 img {
+    display: inline-flex;
+    width: 600px;
+    height: 500px;
+}
+
+.project3 img {
+    display: inline-flex;
+    width: 600px;
+    height: 500px;
+}
+
+.project4 img {
+    display: inline-flex;
+    width: 600px;
+    height: 500px;
+}
+
+.container4 {
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: dotted #ff9fab;
+    border-width: 5px;
+    margin: 50px 10px 10px 200px;
+}
+
+.contact h2 {
+    display:flex;
+    position: absolute;
+    padding: 15px;
+    margin: 0 10px;
+}
+
+.resume {
+    display: flex;
+}
+
+@media screen and (max-width: 950) {
+    body {
+        background-color:#c42f7a;
+    }
+    
+    h1 {
+        display:inline-flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    header {
+        background-color:#ff9fab;
+    }
+
+    .background-img {
+        display:none;
+    }
+
+    nav {
+        display:inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link1, .link2, .link3, .link4 {
+        display:inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        
+    }
+    
 }
