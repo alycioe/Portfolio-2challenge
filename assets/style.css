@@ -58,7 +58,7 @@ nav {
 
 nav ul li {
     display: inline-flex;
-    position: flex;
+    position: relative;
     flex-wrap: wrap;
     font-size: 20px;
     padding: 10px;
@@ -161,15 +161,29 @@ a:link {
     margin: 0 0px;
 }
 
+/* container2 positions the about me section, adds a dotted pink border, and gives the content inside some padding */
+
 .container2 {
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-start;
     flex-direction: row;
-    align-items:flex-start;
+    align-items:center;
     border: dotted #ff9fab;
     border-width: 5px;
     padding: 20px;
+    color:#c42f7a;
+}
+
+/* profilepic makes the image smaller and moves it towards the middle */
+
+.profilepic {
+    display:flex;
+    position:relative;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 0 0 0 700px;
 }
 
 .projects {
@@ -294,6 +308,7 @@ input[type=submit]:hover {
     justify-content:center;
     align-items:center;
     flex-direction: row;
+    color:#c42f7a;
     border: dotted #ff9fab;
     border-width: 5px;
     padding: 20px;
@@ -302,11 +317,11 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 950px) {
     body {
-        background-color:#c42f7a;
+        
     }
     
     h1 {
-        display:inline-flex;
+        display:flex;
         justify-content: center;
         align-items:center;
     }
@@ -314,5 +329,41 @@ input[type=submit]:hover {
     header {
         background-color:#ff9fab;
     }
+
+    nav {
+        display:flex;
+        margin-top: -70px;
+        min-width: 551px;
+    }
     
+    nav ul li {
+        display:inline-flex;
+        flex-direction: row;
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav {
+        display:flex;
+        position:relative;
+        justify-content: center;
+        min-width: 551px;
+    }
+
+    nav ul li {
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about {
+        display: flex;
+        position: relative;
+    }
+
+    .contact {
+        margin: 20px;
+        width: 100%;
+    }
 }
