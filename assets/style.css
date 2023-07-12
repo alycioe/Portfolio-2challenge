@@ -29,6 +29,8 @@ h2 {
     background-image: linear-gradient(to bottom right, #fbf3f0, #ff9fab); 
 }
 
+/* Image of cherry blossoms behind the header elements */
+
 .background-img {
     background-image: url("../images/cherry-blossom-bg.jpg");
     width: 100%;
@@ -36,9 +38,12 @@ h2 {
     padding: 50px;
 }
 
+/* Contains content pertaining to header elements */
+
 .container1 {
-    display:block;
+    display:flex;
     position: relative;
+    width: 100%;
     height: 200px;
     border: dotted rgb(245, 220, 239);
     border-width: 0px 0px 10px 0px;
@@ -49,9 +54,11 @@ nav {
     margin: 110px 0;
 }
 
+/* Designs the location and layout of the links in the header */
+
 nav ul li {
     display: inline-flex;
-    position: flex;
+    position: relative;
     flex-wrap: wrap;
     font-size: 20px;
     padding: 10px;
@@ -59,11 +66,14 @@ nav ul li {
     justify-content: space-around;
 }
 
+/* Bulletpoints are removed and link color added */
+
 a {
     text-decoration:none;
     color:#c42f7a;
-    width: 100%;
 }
+
+/* All of the below link classes add designs through hover, change color, add a transitioning shadow effect, and a cherry blossom emoji appears before the word when hovered over */
 
 .link1 {
     background-color: rgb(247,201,211, .7);
@@ -129,42 +139,80 @@ a:link {
     color:#c42f7a;
 }
 
-.container2 {
-    display: block;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    border: dotted #ff9fab;
-    border-width: 5px;
-    margin: 50px 10px 10px 200px;
+/* Container pertaining to the about category. Fitted with pink dotted borders, centered, and properly spaced from the title and header */
+
+.about {
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    margin: 50px 10px 20px 10px;
 }
+
+/* This displays the header in a fixed location besides the paragraphs */
 
 .about h2 {
     display:flex;
-    position:absolute;
+    position:relative;
+    justify-content: flex-start;
+    align-items:flex-start;
+    max-width: 200px;
+    width: 200px;
     padding: 30px;
-    margin: 0 10px;
+    margin: 0 0px;
 }
 
-.container3 {
-    display: block;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+/* container2 positions the about me section, adds a dotted pink border, and gives the content inside some padding */
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    flex-direction: row;
+    align-items:center;
     border: dotted #ff9fab;
     border-width: 5px;
-    margin: 50px 10px 10px 200px;
+    padding: 20px;
+    color:#c42f7a;
+}
+
+/* profilepic makes the image smaller and moves it towards the middle */
+
+.profilepic {
+    display:flex;
+    position:relative;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 0 0 0 700px;
+}
+
+.projects {
+    display:flex;
+    justify-content: flex-start;
+    align-items:flex-start;
 }
 
 .projects h2 {
     display:flex;
-    position:absolute;
     padding: 30px 40px;
     margin: 0 10px;
+    max-width: 200px;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: row;
+    align-items:space-around;
+    border: dotted #ff9fab;
+    border-width: 5px;
+    padding: 20px;
+    margin: 0;
 }
 
 .project1, .project2, .project3, .project4 {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
@@ -180,51 +228,100 @@ a:link {
 }
 
 .project2 img {
-    display: inline-flex;
+    display: flex;
     width: 600px;
     height: 500px;
 }
 
 .project3 img {
-    display: inline-flex;
+    display: flex;
     width: 600px;
     height: 500px;
 }
 
 .project4 img {
-    display: inline-flex;
+    display: flex;
     width: 600px;
     height: 500px;
 }
 
-.container4 {
-    display: block;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    border: dotted #ff9fab;
-    border-width: 5px;
-    margin: 50px 10px 10px 200px;
-}
-
 .contact h2 {
     display:flex;
-    position: absolute;
-    padding: 15px;
-    margin: 0 10px;
+    position: relative;
+    justify-content:center;
+    padding: 20px 30px;
+    margin: 10px 10px 0 10px;
+}
+
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    flex-direction: row;
+    border: dotted #ff9fab;
+    border-width: 5px;
+    padding: 20px;
+    margin: 0 10px 10px 10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: lavenderblush;
+    border: 1px solid rosybrown;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:#c42f7a;
+    color: white;
+    padding: 12px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:#ff297e;
 }
 
 .resume {
     display: flex;
+    justify-content: flex-start;
 }
 
-@media screen and (max-width: 950) {
+.resume h2 {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 200px;
+    margin: 0px 10px;
+    padding: 20px 30px;
+}
+
+.container5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    color:#c42f7a;
+    border: dotted #ff9fab;
+    border-width: 5px;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 950px) {
     body {
-        background-color:#c42f7a;
+        
     }
     
     h1 {
-        display:inline-flex;
+        display:flex;
         justify-content: center;
         align-items:center;
     }
@@ -233,25 +330,40 @@ a:link {
         background-color:#ff9fab;
     }
 
-    .background-img {
-        display:none;
+    nav {
+        display:flex;
+        margin-top: -70px;
+        min-width: 551px;
+    }
+    
+    nav ul li {
+        display:inline-flex;
+        flex-direction: row;
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav {
+        display:flex;
+        position:relative;
+        justify-content: center;
+        min-width: 551px;
     }
 
-    nav {
+    nav ul li {
         display:inline-flex;
-        flex-wrap: wrap;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .link1, .link2, .link3, .link4 {
-        display:inline-flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items:center;
-        
+    .about {
+        display: flex;
+        position: relative;
     }
-    
+
+    .contact {
+        margin: 20px;
+        width: 100%;
+    }
 }
