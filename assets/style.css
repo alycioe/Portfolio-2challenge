@@ -199,6 +199,8 @@ a:link {
     max-width: 200px;
 }
 
+/* container3 organizes the projects container, centers the images using flex, and spaces them around. it also gives the same border as it does across the containers */
+
 .container3 {
     display: flex;
     flex-wrap: wrap;
@@ -253,6 +255,8 @@ a:link {
     margin: 10px 10px 0 10px;
 }
 
+/* This container, like the others, describes container4, how it's positioned, and how the padding and margins are set up, and decorative border */
+
 .container4 {
     display: flex;
     flex-wrap: wrap;
@@ -263,6 +267,8 @@ a:link {
     padding: 20px;
     margin: 0 10px 10px 10px;
 }
+
+/* The inputs below add a box that allows contact information to be provided and a message to be typed and sent, it is currently not functioning and just acts as a interactive display */
 
 input[type=text], select, textarea {
     width: 100%;
@@ -314,6 +320,16 @@ input[type=submit]:hover {
     padding: 20px;
     margin: 10px 0px;
 }
+
+footer {
+    color:#c42f7a;
+    background-color:rgb(255, 173, 173);
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+/* media screens below focus on improving the site when the device is changed so that the site continues to look correct */
 
 @media screen and (max-width: 950px) {
     body {
