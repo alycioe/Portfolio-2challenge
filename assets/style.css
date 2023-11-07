@@ -1,6 +1,6 @@
-:root {
-    /* Will fill out when needed */
-}
+/* :root {
+     Will fill out when needed 
+} */
 
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -227,6 +227,16 @@ a:link {
     align-items:center;
     width: 1000px;
     height: 500px;
+    transform: scale(.90);
+}
+
+.hover-text {
+    position: absolute;
+    background-color:#ffc7cd;
+    color:#ff297e;
+    top: 100%;
+    left: 16%;
+    padding: 2px;
 }
 
 .project2 img {
@@ -332,9 +342,9 @@ footer {
 /* media screens below focus on improving the site when the device is changed so that the site continues to look correct */
 
 @media screen and (max-width: 950px) {
-    body {
+    /* body {
         
-    }
+    } */
     
     h1 {
         display:flex;
